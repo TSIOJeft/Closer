@@ -1,0 +1,22 @@
+<Page x:Class="Closer.page.DashboardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Closer.page"
+      mc:Ignorable="d"
+      Title="DashboardPage" >
+    <Grid>
+        <StackPanel>
+        <Image Name="qrimage" Width="400" Height="400"></Image>
+            <Button Style="{StaticResource transparentButton}" Margin="12" HorizontalAlignment="Center">
+            <Border Style="{StaticResource ListItemMouseOverBack}" Margin="12" CornerRadius="15" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal" Margin="12">
+                    <Image Source="/icon/ear.png" Width="30" Height="30"></Image>
+                    <TextBlock Name="address" Text="address" FontSize="18" FontWeight="Bold" VerticalAlignment="Center" Margin="12"></TextBlock>
+                </StackPanel>
+            </Border>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

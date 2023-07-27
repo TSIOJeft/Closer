@@ -1,0 +1,48 @@
+<UserControl x:Class="Closer.pages.NavigationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             mc:Ignorable="d"
+             d:DesignHeight="auto" d:DesignWidth="auto">
+    <Grid>
+
+
+        <ItemsControl Name="navigationItems">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                 
+                        <Button Tag="{Binding itemID}" Uid="{Binding index}" Style="{StaticResource menuButton}"
+                                Margin=" 12 12 0 0" Click="NavigationItem_Click"
+                                Selector.IsSelected="{Binding select}" Visibility="{Binding isDivider}">
+                            <Grid>
+                                <Border Height="42"
+                                        Style="{StaticResource NavigationItemSelectBack}"
+                                        CornerRadius="5"
+                                        Selector.IsSelected="{Binding select,Mode=OneWay}" HorizontalAlignment="Left">
+                                </Border>
+                                <Border Width="4"
+                                        Style="{StaticResource NavigationItemSelectIndicator}"
+                                        CornerRadius="2"
+                                        Selector.IsSelected="{Binding select,Mode=OneWay}" HorizontalAlignment="Left"
+                                        VerticalAlignment="Center">
+                                </Border>
+                                <StackPanel Orientation="Horizontal" Margin="16 0 0 0">
+                                    <Image Source="{Binding itemIcon}" Width="26" Height="26">
+                                    </Image>
+                                    <TextBlock Text="{Binding itemTitle}" VerticalAlignment="Center" Margin="16 0 0 0" />
+                                </StackPanel>
+                            </Grid>
+                        </Button>
+                        <Border Margin="16 12 16 0" Height="1" HorizontalAlignment="Stretch" Background="#eeeeee" Visibility="{Binding risDivider}" />
+
+                    </Grid>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+
+</UserControl>

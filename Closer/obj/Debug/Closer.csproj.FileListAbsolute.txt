@@ -1,0 +1,10 @@
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\咫尺妙享.exe
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\咫尺妙享.pdb
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\Microsoft.Toolkit.Uwp.Notifications.dll
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\Nancy.dll
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\Nancy.Hosting.Self.dll
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\Newtonsoft.Json.dll
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\QRCoder.dll
+D:\FarPlace\Project\Window\Closer\Closer\bin\Debug\Wpf.Ui.dll
